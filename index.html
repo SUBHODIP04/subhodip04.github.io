@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{YOUR_NAME}} – Data Analyst | Portfolio & Services</title>
+  <meta name="description" content="Data analyst portfolio and services – dashboards, data cleaning, business insights, automation. Hire {{YOUR_NAME}} for high‑impact analytics." />
+  <meta name="author" content="{{YOUR_NAME}}" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    :root {
+      --brand: #4f46e5;
+      --bg: #0b1020;
+      --card: #121735;
+    }
+    body { background: linear-gradient(180deg, var(--bg), #0e1530); color: #e6e9f5; }
+    .navbar { backdrop-filter: blur(8px); background-color: rgba(10, 14, 35, .65)!important; }
+    .nav-link { color: #cbd5ff!important; }
+    .nav-link.active, .nav-link:hover { color: #ffffff!important; }
+    .hero {
+      padding: 7rem 0 5rem;
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(99,102,241,.25), transparent),
+                  radial-gradient(1000px 500px at 110% 10%, rgba(34,197,94,.20), transparent);
+    }
+    .btn-brand { background: var(--brand); border: 0; }
+    .btn-outline-brand { border-color: var(--brand); color: #cbd5ff; }
+    .btn-outline-brand:hover { background: var(--brand); color: #fff; }
+    .section-title { letter-spacing: .02em; }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+      border: 1px solid rgba(255,255,255,.07);
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    .badge-soft { background: rgba(99,102,241,.2); color: #dfe3ff; }
+    .icon-pill { width: 44px; height: 44px; display:inline-flex; align-items:center; justify-content:center; border-radius: 12px; background: rgba(99,102,241,.15); }
+    .footer { border-top: 1px solid rgba(255,255,255,.08); }
+    a { text-decoration: none; }
+    .link-fade { opacity: .9; }
+    .link-fade:hover { opacity: 1; }
+    /* Smooth scroll offset for fixed navbar */
+    :target::before { content: ""; display: block; height: 70px; margin-top: -70px; visibility: hidden; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{YOUR_NAME}}",
+    "jobTitle": "Data Analyst",
+    "url": "https://YOUR_GITHUB_USERNAME.github.io/",
+    "sameAs": ["https://www.linkedin.com/in/YOUR_LINKEDIN/", "https://github.com/YOUR_GITHUB_USERNAME"]
+  }
+  </script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-semibold text-white" href="#home"><i class="bi bi-graph-up"></i> {{YOUR_NAME}}</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="bi bi-list text-white fs-1"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-sm btn-brand ms-lg-3">Hire Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <span class="badge badge-soft mb-3">Available for freelance projects</span>
+          <h1 class="display-5 fw-bold section-title">Hi, I'm <span class="text-white">{{YOUR_NAME}}</span> — I turn raw data into clear business decisions.</h1>
+          <p class="lead text-white-50 mt-3">Data Analyst specializing in Excel, SQL, Python, and Power BI. I design dashboards, clean messy data, and deliver actionable insights for small businesses and startups.</p>
+          <div class="d-flex gap-3 mt-4">
+            <a href="#portfolio" class="btn btn-brand btn-lg"><i class="bi bi-collection me-2"></i>View My Work</a>
+            <a href="#services" class="btn btn-outline-brand btn-lg"><i class="bi bi-briefcase me-2"></i>Services</a>
+          </div>
+          <div class="d-flex align-items-center gap-3 mt-4">
+            <a class="link-fade" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noreferrer"><i class="bi bi-github fs-3"></i></a>
+            <a class="link-fade" href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noreferrer"><i class="bi bi-linkedin fs-3"></i></a>
+            <a class="link-fade" href="https://www.fiverr.com/YOUR_FIVERR/" target="_blank" rel="noreferrer"><i class="bi bi-briefcase-fill fs-3"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img src="https://picsum.photos/seed/dashboards/680/500" alt="Dashboard preview" class="img-fluid rounded-4 border border-1 border-opacity-25" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-8">
+          <h2 class="fw-bold">Portfolio</h2>
+          <p class="text-white-50">A selection of analytics work. Replace with your screenshots, live dashboards, or GitHub links.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" class="btn btn-outline-brand"><i class="bi bi-github me-2"></i>See all on GitHub</a>
+        </div>
+      </div>
+      <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 rounded-4">
+            <img src="https://picsum.photos/seed/hr/800/600" class="card-img-top" alt="HR Attrition Dashboard" />
+            <div class="card-body">
+              <h5 class="card-title">HR Attrition Dashboard</h5>
+              <p class="card-text text-white-50">Excel / Power BI – Track turnover, identify risk segments, and monitor retention KPIs.</p>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge badge-soft">Excel</span>
+                <span class="badge badge-soft">Power BI</span>
+                <span class="badge badge-soft">DAX</span>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-sm btn-outline-brand"><i class="bi bi-eye me-1"></i>Live</a>
+                <a href="#" class="btn btn-sm btn-outline-brand"><i class="bi bi-github me-1"></i>Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 rounded-4">
+            <img src="https://picsum.photos/seed/sales/800/600" class="card-img-top" alt="Sales Analysis & Forecasting" />
+            <div class="card-body">
+              <h5 class="card-title">Sales Analysis & Forecasting</h5>
+              <p class="card-text text-white-50">Python / Excel – Trend analysis, seasonality, and product performance with simple forecasting.</p>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge badge-soft">Python</span>
+                <span class="badge badge-soft">Pandas</span>
+                <span class="badge badge-soft">Excel</span>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-sm btn-outline-brand"><i class="bi bi-eye me-1"></i>Live</a>
+                <a href="#" class="btn btn-sm btn-outline-brand"><i class="bi bi-github me-1"></i>Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 rounded-4">
+            <img src="https://picsum.photos/seed/segmentation/800/600" class="card-img-top" alt="Customer Segmentation" />
+            <div class="card-body">
+              <h5 class="card-title">Customer Segmentation</h5>
+              <p class="card-text text-white-50">SQL / Python – RFM segmentation to discover high‑value cohorts and tailor campaigns.</p>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge badge-soft">SQL</span>
+                <span class="badge badge-soft">Python</span>
+                <span class="badge badge-soft">Visualization</span>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-sm btn-outline-brand"><i class="bi bi-eye me-1"></i>Live</a>
+                <a href="#" class="btn btn-sm btn-outline-brand"><i class="bi bi-github me-1"></i>Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-8">
+          <h2 class="fw-bold">Services</h2>
+          <p class="text-white-50">Clear deliverables, fast turnaround. Choose a package or request a custom quote.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 rounded-4 p-3">
+            <div class="icon-pill mb-3"><i class="bi bi-broom fs-4"></i></div>
+            <h5>Data Cleaning</h5>
+            <p class="text-white-50">Fix duplicates, missing values, formatting, and outliers. Delivery as clean Excel/CSV file.</p>
+            <p class="mb-2"><strong>Starting:</strong> ₹1,999</p>
+            <a href="#contact" class="stretched-link">Get started</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 rounded-4 p-3">
+            <div class="icon-pill mb-3"><i class="bi bi-bar-chart-line fs-4"></i></div>
+            <h5>Dashboards</h5>
+            <p class="text-white-50">Power BI / Tableau / Excel dashboards with KPIs and drill‑downs.</p>
+            <p class="mb-2"><strong>Starting:</strong> ₹3,999</p>
+            <a href="#contact" class="stretched-link">Request a demo</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 rounded-4 p-3">
+            <div class="icon-pill mb-3"><i class="bi bi-search fs-4"></i></div>
+            <h5>Insights & Reports</h5>
+            <p class="text-white-50">Monthly/weekly reports with trends, anomalies, and recommendations.</p>
+            <p class="mb-2"><strong>Starting:</strong> ₹2,999</p>
+            <a href="#contact" class="stretched-link">Talk to me</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 rounded-4 p-3">
+            <div class="icon-pill mb-3"><i class="bi bi-gear fs-4"></i></div>
+            <h5>Automation</h5>
+            <p class="text-white-50">Python/Excel automation to save hours with repeatable workflows.</p>
+            <p class="mb-2"><strong>Starting:</strong> ₹3,499</p>
+            <a href="#contact" class="stretched-link">Let’s automate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-5">
+          <img src="https://picsum.photos/seed/profile/600/600" class="img-fluid rounded-4" alt="{{YOUR_NAME}} portrait placeholder" />
+        </div>
+        <div class="col-lg-7">
+          <h2 class="fw-bold">About Me</h2>
+          <p class="text-white-50">I'm {{YOUR_NAME}}, a data analyst focused on practical outcomes. I help businesses make sense of their data with clean models, intuitive dashboards, and concise recommendations.</p>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <span class="badge badge-soft">Excel</span>
+            <span class="badge badge-soft">Power BI</span>
+            <span class="badge badge-soft">SQL</span>
+            <span class="badge badge-soft">Python</span>
+            <span class="badge badge-soft">Tableau</span>
+            <span class="badge badge-soft">ETL</span>
+            <span class="badge badge-soft">DAX</span>
+          </div>
+          <div class="mt-3">
+            <a href="mailto:you@example.com" class="btn btn-outline-brand me-2"><i class="bi bi-envelope me-2"></i>Email</a>
+            <a href="#contact" class="btn btn-brand"><i class="bi bi-calendar2-check me-2"></i>Book a call</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-8">
+          <h2 class="fw-bold">Contact</h2>
+          <p class="text-white-50">Send a message for quotes, collaborations, or questions. The form below uses Formspree – replace the action URL with your own endpoint, or add your Fiverr/LinkedIn.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <form class="card rounded-4 p-4" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" placeholder="you@example.com" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label">What do you need?</label>
+                <select class="form-select" name="service">
+                  <option>Data Cleaning</option>
+                  <option>Dashboard (Power BI/Tableau/Excel)</option>
+                  <option>Insights & Report</option>
+                  <option>Automation</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+              </div>
+            </div>
+            <button class="btn btn-brand btn-lg mt-3" type="submit"><i class="bi bi-send me-2"></i>Send</button>
+            <p class="small text-white-50 mt-3">Prefer email? <a class="link-light" href="mailto:you@example.com">you@example.com</a></p>
+          </form>
+        </div>
+        <div class="col-lg-5">
+          <div class="card rounded-4 p-4 h-100">
+            <h5>Hire Me</h5>
+            <ul class="list-unstyled mt-3 mb-4 text-white-50">
+              <li class="mb-2"><i class="bi bi-check2 me-2"></i>48–72h initial draft</li>
+              <li class="mb-2"><i class="bi bi-check2 me-2"></i>Source files & documentation</li>
+              <li class="mb-2"><i class="bi bi-check2 me-2"></i>Two revision rounds</li>
+            </ul>
+            <div class="d-flex gap-2">
+              <a href="https://www.fiverr.com/YOUR_FIVERR/" target="_blank" class="btn btn-outline-brand"><i class="bi bi-briefcase me-2"></i>Fiverr</a>
+              <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" class="btn btn-outline-brand"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="text-white-50">© <span id="yr"></span> {{YOUR_NAME}}. All rights reserved.</div>
+      <div class="d-flex gap-3 mt-3 mt-md-0">
+        <a class="link-fade" href="mailto:you@example.com"><i class="bi bi-envelope"></i></a>
+        <a class="link-fade" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank"><i class="bi bi-github"></i></a>
+        <a class="link-fade" href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Active nav highlighting on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const setActive = () => {
+      let current = '';
+      sections.forEach(sec => {
+        const top = window.scrollY + 100;
+        if (top >= sec.offsetTop && top < sec.offsetTop + sec.offsetHeight) current = sec.getAttribute('id');
+      });
+      navLinks.forEach(l => {
+        l.classList.remove('active');
+        if (l.getAttribute('href') === '#' + current) l.classList.add('active');
+      });
+    };
+    window.addEventListener('scroll', setActive);
+    window.addEventListener('load', () => {
+      setActive();
+      document.getElementById('yr').textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>
