@@ -41,7 +41,19 @@
     .link-fade:hover { opacity: 1; }
     /* Smooth scroll offset for fixed navbar */
     :target::before { content: ""; display: block; height: 70px; margin-top: -70px; visibility: hidden; }
+      <style>
+    :root {
+      --brand: #4f46e5;
+      --bg: #0b1020;
+      --card: #121735;
+    }
+    body { background: linear-gradient(180deg, var(--bg), #0e1530); color: #e6e9f5; }
+    ...
+    .link-fade:hover { opacity: 1; }
+    /* Smooth scroll offset for fixed navbar */
+    :target::before { content: ""; display: block; height: 70px; margin-top: -70px; visibility: hidden; }
   </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
