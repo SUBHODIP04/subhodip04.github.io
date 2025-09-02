@@ -64,6 +64,13 @@
   color: #ffffff !important;
   font-weight: bold !important;
 }
+.profile-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;   /* makes sure face fills the circle */
+  object-position: center;  /* keeps your face centered */
+}
+
 
   </style>
 
@@ -251,9 +258,8 @@
     <div class="container">
       <div class="row align-items-center g-4">
         <div class="col-lg-5">
-          <img src="Profile1.jpg" class="img-fluid rounded-circle border border-3 border-light"
-     alt="Subhodip Sarkar profile photo"
-     style="width:250px; height:250px; object-fit:cover;" />
+          <img src="Profile1.jpg" class="img-fluid rounded-circle border border-3 border-light profile-img"
+     alt="Subhodip Sarkar profile photo" />
         </div>
         <div class="col-lg-7">
           <h2 class="fw-bold">About Me</h2>
